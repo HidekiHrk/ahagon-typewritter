@@ -1,0 +1,1 @@
+pipenv run pyinstaller -D -F -w -n AhagonTypeWritter --icon=".\assets\icon.ico" ./main.py
