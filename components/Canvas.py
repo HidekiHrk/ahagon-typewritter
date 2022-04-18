@@ -8,8 +8,9 @@ LAYERS = ['first_layer', 'second_layer']
 
 
 class Canvas(tkinter.Canvas):
-    def __init__(self, root: Any, sizes: Tuple[int, int], frames_paths: List[str]):
-        super().__init__(root, width=sizes[0], height=sizes[1])
+    def __init__(self, root: Any, sizes: Tuple[int, int], frames_paths: List[str], background_color: str):
+        super().__init__(root, width=sizes[0],
+                         height=sizes[1], bg=background_color)
         self.pack(expand=True)
         self.__frameSet: FrameSet = FrameSet(self, frames_paths)
         self.__current_layer = 0
