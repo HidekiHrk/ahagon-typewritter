@@ -8,7 +8,7 @@ from utils.files import get_frame_folder, get_icon
 
 
 def main():
-    window = MainWindow(WINDOW_NAME, FRAME_SIZE, icon=get_icon(), )
+    window = MainWindow(WINDOW_NAME, FRAME_SIZE, icon=get_icon())
 
     frames_paths = [get_frame_folder(file_name)
                     for file_name in listdir(get_frame_folder())]

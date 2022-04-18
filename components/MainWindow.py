@@ -9,7 +9,7 @@ class MainWindow(tk.Tk):
         self.geometry("{}x{}".format(*sizes[:2]))
         self.resizable(width=False, height=False)
         if icon:
-            self.iconbitmap(icon)
+            self.iconphoto(True, tk.PhotoImage(file=icon))
 
     def close(self):
         self.destroy()
